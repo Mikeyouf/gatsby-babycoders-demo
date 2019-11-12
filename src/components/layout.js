@@ -15,7 +15,7 @@ const PageWrapper = styled.div`
 `
 
 const MainSection = styled.main`
-  margin: 30px 0;
+  margin: 0;
   width: 100%;
 `
 
@@ -29,7 +29,7 @@ const FooterStyled = styled.footer`
   }
 `
 const ExternalLink = styled.a`
-  color: #c59fc5;
+  color: ${props => props.theme.colors.primaryAccent};
 `
 
 
@@ -45,7 +45,7 @@ class Layout extends React.Component {
   render() {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const siteName = "Gwen's Cake Shop"
+    const siteName = "Baby's Coders"
     let header
 
     if (location.pathname === rootPath) {
@@ -68,8 +68,8 @@ class Layout extends React.Component {
             {header}
             <MainSection>{children}</MainSection>
             <FooterStyled>
-              <strong>Gatsby Snipcart Starter
-           - Made by <ExternalLink href="https://www.issydennis.com/" target="_blank" rel="noopener noreferrer">Issy Dennis</ExternalLink>
+              <strong>Baby's Coders
+           - Créé par <ExternalLink href="https://www.issydennis.com/" target="_blank" rel="noopener noreferrer">Mik@el</ExternalLink>
               </strong>
             </FooterStyled>
           </PageWrapper>

@@ -86,7 +86,7 @@ class Item extends React.Component {
 
         <ImgStyled fluid={item.frontmatter.image.childImageSharp.fluid} />
 
-        <Price>£{this.updatePrice(item.frontmatter.price, item.frontmatter.customField.values)}</Price>
+        <Price>{this.updatePrice(item.frontmatter.price, item.frontmatter.customField.values)}€</Price>
         <Description>{item.frontmatter.description}</Description>
         <Dropdown
           id={item.frontmatter.customField.name}
@@ -106,7 +106,7 @@ class Item extends React.Component {
           data-item-custom1-name={item.frontmatter.customField ? item.frontmatter.customField.name : null}
           data-item-custom1-options={this.createString(item.frontmatter.customField.values)}
           data-item-custom1-value={this.state.selected}>
-          Add to basket
+          Ajouter au panier
         </BuyButton>
 
       </Layout>

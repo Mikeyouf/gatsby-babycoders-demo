@@ -14,7 +14,7 @@ const ThumbnailsWrapper = styled.div`
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    /* padding: 20px; */
 `
 
 class BlogIndex extends React.Component {
@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All items" />
+        <SEO title={siteTitle} />
       <ThumbnailsWrapper>
         {items.map(({ node }) => {
           const { title, image, price } = node.frontmatter
@@ -40,8 +40,6 @@ class BlogIndex extends React.Component {
           )
         })}
       </ThumbnailsWrapper>
-        
-
       </Layout>
     )
   }

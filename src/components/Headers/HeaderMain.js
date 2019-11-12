@@ -7,16 +7,16 @@ const HeaderMainStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    padding: 0 20px;
 `
 
 const ShopName = styled.h1`
     background: ${props => props.theme.colors.main};
     padding: 20px;
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-family: Heebo, sans-serif;
-    border: 4px solid ${props => props.theme.colors.secondaryAccent};
+    border: 4px solid ${props => props.theme.colors.lightMain};
     font-size: 2.5em;
     font-weight: 900;
     @media (max-width: 600px) {

@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 
 
 const ItemThumbnailStyled = styled.div`
-    width: 350px;
+    width: 365px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -11,7 +11,7 @@ const HeaderMinorStyled = styled.div`
     align-items: center;
     background: ${props => props.theme.colors.main};
     margin: 20px 0;
-    border: 4px solid ${props => props.theme.colors.secondaryAccent};
+    border: 4px solid ${props => props.theme.colors.lightMain};
 
 `
 
@@ -82,7 +82,7 @@ class HeaderMinor extends Component {
                 </ShopName>
                 <CartSummary className="snipcart-summary">
                     <a href="#" className="snipcart-checkout"> <ShoppingCart size='40px' /></a>
-                    <p>{this.state.items} yummy items</p>
+                    <p>{this.state.items} {this.state.items > 1 ? 'produits' : 'produit'} dans votre panier</p>
                 </CartSummary>
 
             </HeaderMinorStyled>

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `E-commerce Snipcart et Gatsby Starter`,
+    title: `Baby's Coders`,
     author: `Mik@el`,
-    description: `Excercice Hardcoders de créartion e-commerce avec Gatsby et Snipcart`,
-    siteUrl: `https://gatsby-snipcart-starter.netlify.com/`,
+    description: `Excercice Hardcoders de création e-commerce avec Gatsby et Snipcart`,
+    siteUrl: `https://baby-coders.netlify.com`,
   },
   plugins: [
     {
