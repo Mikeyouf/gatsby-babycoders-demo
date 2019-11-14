@@ -30,6 +30,7 @@ const Heading = styled.h3`
     width: 100%;
     min-height: 85px;
     margin: auto;
+    color: ${props => props.theme.colors.textColorDark};
     
 `
 

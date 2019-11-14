@@ -7,6 +7,7 @@ import styled from "styled-components"
 import ItemThumbnail from '../components/ItemThumbnail/ItemThumbnail';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Abonnement from "../components/abonnement/Abonnement"
 
 const ThumbnailsWrapper = styled.div`
     width: 100%;
@@ -26,20 +27,21 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} />
-      <ThumbnailsWrapper>
-        {items.map(({ node }) => {
-          const { title, image, price } = node.frontmatter
-          return (
-            <ItemThumbnail
-              key={node.fields.slug}
-              link={node.fields.slug}
-              heading={title}
-              image={image.childImageSharp.fluid}
-              price={price}
-            />
-          )
-        })}
-      </ThumbnailsWrapper>
+        <ThumbnailsWrapper>
+          {items.map(({ node }) => {
+            const { title, image, price } = node.frontmatter
+            return (
+              <ItemThumbnail
+                key={node.fields.slug}
+                link={node.fields.slug}
+                heading={title}
+                image={image.childImageSharp.fluid}
+                price={price}
+              />
+            )
+          })}
+        </ThumbnailsWrapper>
+        <Abonnement />
       </Layout>
     )
   }

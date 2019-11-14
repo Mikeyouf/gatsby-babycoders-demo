@@ -7,5 +7,7 @@ export const theme = {
         lightMain: '#b0dfe8',
         primaryAccent: '#E5576C', //used for thumbnails on homepage and as price background
         secondaryAccent: '#E5576C', //used for header border and item buttons
+        textColor: '#706672',
+        textColorDark: '#504951'
     }
 };

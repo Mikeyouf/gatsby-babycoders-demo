@@ -19,6 +19,7 @@ const ShopName = styled.h1`
     border: 4px solid ${props => props.theme.colors.lightMain};
     font-size: 2.5em;
     font-weight: 900;
+    color: ${props => props.theme.colors.textColor};
     @media (max-width: 600px) {
         width: 100%;
       }
